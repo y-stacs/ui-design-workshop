@@ -1,0 +1,62 @@
+# =========================
+# Operating System Files
+# =========================
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+
+# =========================
+# Editor / IDE Files
+# =========================
+
+.vscode/
+.idea/
+
+# Vim
+*.swp
+*.swo
+
+
+# =========================
+# Dependencies
+# =========================
+
+node_modules/
+
+
+# =========================
+# Environment / Secrets
+# =========================
+
+.env
+.env.*
+!.env.example
+
+
+# =========================
+# Build / Generated Files
+# =========================
+
+dist/
+build/
+coverage/
+
+
+# =========================
+# Logs
+# =========================
+
+*.log
+
+
+# =========================
+# Temporary Files
+# =========================
+
+*.tmp
+*.temp
