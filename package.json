@@ -1,0 +1,24 @@
+{
+  "name": "ui",
+  "version": "1.0.0",
+  "description": "![alt text](/public/img/site-ui/yngi-portfolio.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/y-stacs/ui-design-workshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/y-stacs/ui-design-workshop/issues"
+  },
+  "homepage": "https://github.com/y-stacs/ui-design-workshop#readme",
+  "devDependencies": {
+    "sass": "^1.105.1"
+  }
+}
