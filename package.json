@@ -4,7 +4,8 @@
   "description": "![alt text](/public/img/site-ui/yngi-portfolio.png)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/main.scss:css/main.css"
   },
   "repository": {
     "type": "git",
