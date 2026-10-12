@@ -1,18 +1,30 @@
-header {
-  background: var(--default-content-background);
-  padding: 3rem;
-  color: var(--default-text-color);
+html, body {
+  font-family: var(--default-font-family);
 }
 
 :root {
-  --default-text-color: #005461;
-  --default-root-background-color: #f5f5f5;
+  --default-root-background-color: #f1f1f1;
   --default-html-background-color: #ffffff;
-  --default-content-background: #f1f1f1;
-  --spacing-sm: 0.5rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 2rem;
-  --page-width: 75%;
+  --default-content-background: #f5f5f5;
+  --default-font-family: "Segoe UI", -apple-system, Arial, Verdana, sans-serif;
+  --default-font-size: 16px;
+  --space-sm: 0.5em
+  --space-md: 1em
+  --space-lg: 2em ;
+}
+
+header {
+  background: var(--default-content-background);
+  padding: 3rem;
+  color: var(--default-font-color);
+  font-family: var(--default-font-family);
+}
+
+footer {
+  background: var(--default-content-background);
+  padding: 3rem;
+  color: var(--default-font-color);
+  font-family: var(--default-font-family);
 }
 
 /*# sourceMappingURL=main.css.map */

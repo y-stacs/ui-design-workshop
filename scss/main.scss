@@ -1,3 +1,22 @@
-@use "./abstracts/variables"; //in another directory
+//reusable styles
+@use "./abstracts/variables";
+@use "./abstracts/mixins";
+
+// 2. Foundation
+@use "./base/reset";
+@use "./base/typography";
+@use "./base/global";
+@use "./base/root";
+
+// 3. Page structure
 @use "./layout/header";
-@use "./root"; //same directory
+@use "./layout/navigation";
+@use "./layout/footer";
+
+// 4. Reusable components
+@use "./components/buttons";
+@use "./components/cards";
+@use "./components/forms";
+
+// 5. Page-specific styles - if any
+// @use "pages/home";

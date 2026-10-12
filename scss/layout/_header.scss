@@ -3,5 +3,6 @@
 header {
   background: var(--default-content-background);
   padding: $spacing-md;
-  color: var(--default-text-color);
+  color: var(--default-font-color);
+  font-family: var(--default-font-family);
 }

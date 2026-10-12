@@ -1,104 +1,102 @@
 <!doctype html>
 <html lang="en-US">
   <head>
+    <!--universal character set that includes pretty much any character-->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <!-- helps webpages adapt to mobile devices and different screen widths-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!--SEO tags -->
+    <!--name of the author or creator of the HTML document-->
+    <meta name="author" content="Yingi Chiqinda" />
+    <!--a brief summary of the webpage-->
+    <meta
+      name="description"
+      content="Learn the fundamentals for builiding responsive UIs using HTML, SCSS, and CSS."
+    />
+    <!--a brief summary of the webpage-->
+    <meta name="keywords" content="HTML, CSS, web development, tutorial" />
+    <!-- provides instructions to search engine crawlers -->
+    <meta name="robots" content="index, follow" />
+    <!-- requests a page refresh every 30 seconds -->
+    <meta http-equiv="refresh" content="30" />
+
+    <!-- Open Graph / Social sharing tags -->
+    <meta property="og:title" content="Frontend Developer Portfolio" />
+
+    <meta
+      property="og:description"
+      content="Explore my frontend development projects, skills, and portfolio."
+    />
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:url" content="https://example.com/portfolio" />
+
+    <meta
+      property="og:image"
+      content="https://example.com/images/social-preview.jpg"
+    />
+
+    <meta
+      property="og:image:alt"
+      content="Preview of my frontend developer portfolio"
+    />
+
+    <meta property="og:site_name" content="My Portfolio" />
+
+    <meta property="og:locale" content="en_ZA" />
+
+    <!-- page title - on the browser -->
     <title>My page title</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <!-- External stylesheet -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
-    <!-- The main header used across all the pages of our website -->
-
+    <!-- page-header -->
     <header>
-      <h1>Header</h1>
+      <h1>Company name</h1>
+      <p>slagan</p>
     </header>
 
+    <!-- page main bavbar -->
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Our team</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-
-      <!-- A Search form: another common non-linear
-           way to navigate through a site. -->
-
-      <form>
-        <input type="search" name="q" placeholder="Search query" />
-        <input type="submit" value="Go!" />
-      </form>
+      <h3>Navbar items</h3>
     </nav>
 
-    <!-- Our page's main content -->
+    <!-- page main-content -->
     <main>
-      <!-- An article -->
-      <article>
-        <h2>Article heading</h2>
-
+      <!-- page section -->
+      <section>
+        <h2>section heading a</h2>
+        <h3>section sub-headeing</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam
-          lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam
-          viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent
-          et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt
-          congue enim, ut porta lorem lacinia consectetur.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+          <a href="#">hyperlink example 1</a>
+          <a href="#">hyperlink example 1</a>
         </p>
+      </section>
 
-        <section>
-          <h3>Subsection</h3>
-
-          <p>
-            Donec ut librero sed accu vehicula ultricies a non tortor. Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut
-            gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id
-            dolor.
-          </p>
-
-          <p>
-            Pelientesque auctor nisi id magna consequat sagittis. Curabitur
-            dapibus, enim sit amet elit pharetra tincidunt feugiat nist
-            imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed
-            odio eros.
-          </p>
-        </section>
-
-        <section>
-          <h3>Another subsection</h3>
-
-          <p>
-            Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum
-            soclis natoque penatibus et manis dis parturient montes, nascetur
-            ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at
-            sem facilisis semper ac in est.
-          </p>
-
-          <p>
-            Vivamus fermentum semper porta. Nunc diam velit, adipscing ut
-            tristique vitae sagittis vel odio. Maecenas convallis ullamcorper
-            ultricied. Curabitur ornare, ligula semper consectetur sagittis,
-            nisi diam iaculis velit, is fringille sem nunc vet mi.
-          </p>
-        </section>
-      </article>
-
-      <!-- the aside content can also be nested within the main content -->
-      <aside>
-        <h2>Related</h2>
-
-        <ul>
-          <li><a href="#">Oh I do like to be beside the seaside</a></li>
-          <li><a href="#">Oh I do like to be beside the sea</a></li>
-          <li><a href="#">Although in the North of England</a></li>
-          <li><a href="#">It never stops raining</a></li>
-          <li><a href="#">Oh well…</a></li>
-        </ul>
-      </aside>
+      <!-- page section -->
+      <section>
+        <h2>section heading b</h2>
+        <h3>section sub-headeing</h3>
+        <article>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </article>
+      </section>
     </main>
 
-    <!-- The footer that is used across all the pages of our website -->
-
+    <!-- page-header -->
     <footer>
       <p>©Copyright 2050 by nobody. All rights reversed.</p>
     </footer>
