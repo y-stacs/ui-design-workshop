@@ -1,7 +1,7 @@
 @use "../abstracts/variables" as *;;
 
 header {
-  background: $primary-color;
+  background: var(--default-content-background);
   padding: $spacing-md;
-  color: $text-color;
+  color: var(--default-text-color);
 }
