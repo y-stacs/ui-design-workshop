@@ -12,6 +12,8 @@
 @use "./layout/header";
 @use "./layout/navigation";
 @use "./layout/footer";
+@use "./layout/hero";
+@use "./layout/grid";
 
 // 4. Reusable components
 @use "./components/buttons";
@@ -19,4 +21,4 @@
 @use "./components/forms";
 
 // 5. Page-specific styles - if any
-// @use "pages/home";
+@use "./pages/home";

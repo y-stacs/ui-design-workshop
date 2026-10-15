@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <!--universal character set that includes pretty much any character-->
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <!-- helps webpages adapt to mobile devices and different screen widths-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -12,14 +12,13 @@
     <!--a brief summary of the webpage-->
     <meta
       name="description"
-      content="Learn the fundamentals for builiding responsive UIs using HTML, SCSS, and CSS."
-    />
+      content="Learn the fundamentals for builiding responsive UIs using HTML, SCSS, and CSS."/>
     <!--a brief summary of the webpage-->
     <meta name="keywords" content="HTML, CSS, web development, tutorial" />
     <!-- provides instructions to search engine crawlers -->
     <meta name="robots" content="index, follow" />
     <!-- requests a page refresh every 30 seconds -->
-    <meta http-equiv="refresh" content="30" />
+    <!-- <meta http-equiv="refresh" content="30" /> -->
 
     <!-- Open Graph / Social sharing tags -->
     <meta property="og:title" content="Frontend Developer Portfolio" />
@@ -53,26 +52,43 @@
     <link rel="icon" href="assets/images/favicon.ico" />
     <!-- External stylesheet -->
     <link rel="stylesheet" href="css/main.css" />
+
+    <!-- External js file -->
+    <script src="js/masterpage-layouts-loader.js" defer></script>
   </head>
 
   <body>
-    <!-- page-header -->
-    <header>
-      <h1>Company name</h1>
-      <p>slagan</p>
-    </header>
+    
+    <!-- 
+        page-header
+        include header layout 
+    -->
+    <div data-include="layouts/header.html"></div>
 
-    <!-- page main bavbar -->
-    <nav>
-      <h3>Navbar items</h3>
-    </nav>
+    <!-- 
+        hero section
+        include hero layout 
+    -->
+    <div data-include="layouts/hero.html"></div>
 
     <!-- page main-content -->
-    <main>
+    <main class="home-main-comtainer" id="home-main-comtainer">
+
       <!-- page section -->
+      <section class="page-summary ">
+        <h1>Welcome</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        
+      </section>
+
+       <!-- page section -->
       <section>
         <h2>section heading a</h2>
-        <h3>section sub-headeing</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -86,7 +102,7 @@
       <!-- page section -->
       <section>
         <h2>section heading b</h2>
-        <h3>section sub-headeing</h3>
+        <h3>section sub-heading</h3>
         <article>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -96,9 +112,12 @@
       </section>
     </main>
 
-    <!-- page-header -->
-    <footer>
-      <p>©Copyright 2050 by nobody. All rights reversed.</p>
-    </footer>
+    <!-- 
+        page-footer
+        include footer layout 
+    -->
+    <div data-include="layouts/footer.html"></div>
+
   </body>
+
 </html>

@@ -1,0 +1,89 @@
+@use "../abstracts/variables" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+//remove any space around the entire html document
+* {
+  margin: 0;
+  padding: 0;
+  // color: $text-color;
+}
+
+html {
+  background-color: var(--default-root-background-color);
+
+  //remove any space around these elements
+  body,
+  h1,
+  h2,
+  h3,
+  p {
+    margin: 0;
+  }
+
+  body {
+    //default hyperlinks font color
+    a {
+      color: var(--hyperlink-color);
+    }
+
+    //mouse pointer cursor on any button by default
+    button {
+      cursor: pointer;
+    }
+
+    //display all in blocks and in max-width
+    img,
+    picture,
+    video,
+    canvas,
+    svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    min-height: 100vh;
+
+    background-color: var(--default-page-background-color);
+    width: 100%;
+    max-width: $container-max-width;
+    margin-inline: auto;
+    padding-inline: $container-padding;
+
+    padding: 0 48px 32px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    .container,
+    header,
+    footer,
+    main {
+      width: 100%;
+      border: 1px solid lightgrey;
+      padding: 24px;
+      // border-radius: 4px;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4px;
+
+      section {
+        // border: 1px solid lightgrey;
+        padding-bottom: 16px;
+        border-radius: 4px;
+
+        // .page-summary {
+        //   page name and descrition section
+        // }
+      }
+    }
+  }
+}

@@ -1,30 +1,135 @@
-html, body {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: var(--default-root-background-color);
+}
+html body,
+html h1,
+html h2,
+html h3,
+html p {
+  margin: 0;
+}
+html body a {
+  color: var(--hyperlink-color);
+}
+html body button {
+  cursor: pointer;
+}
+html body img,
+html body picture,
+html body video,
+html body canvas,
+html body svg {
+  display: block;
+  max-width: 100%;
+}
+html body {
+  min-height: 100vh;
+  background-color: var(--default-page-background-color);
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+  padding: 0 48px 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+html body .container,
+html body header,
+html body footer,
+html body main {
+  width: 100%;
+  border: 1px solid lightgrey;
+  padding: 24px;
+}
+html body main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+html body main section {
+  padding-bottom: 16px;
+  border-radius: 4px;
+}
+
+body {
   font-family: var(--default-font-family);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
 }
 
 :root {
-  --default-root-background-color: #f1f1f1;
-  --default-html-background-color: #ffffff;
-  --default-content-background: #f5f5f5;
-  --default-font-family: "Segoe UI", -apple-system, Arial, Verdana, sans-serif;
+  --neutral-color-black: #000000;
+  --neutral-color-white: #ffffff;
+  --neutral-color-red: #d62828;
   --default-font-size: 16px;
-  --space-sm: 0.5em
-  --space-md: 1em
-  --space-lg: 2em ;
+  --default-font-color: lightslategray;
+  --default-font-family:
+    -apple-system-body, ui-sans-serif, -apple-system, system-ui, Segoe UI,
+    Helvetica, Apple Color Emoji, Arial, sans-serif, Segoe UI Emoji,
+    Segoe UI Symbol;
+  --hyperlink-color: #db1a1a;
+  --default-root-background-color: #f1f1f1;
+  --default-page-background-color: #ffffff;
+  --default-section-background-color: #f5f5f5;
+  --spacing-sm: 0.5em;
+  --spacing-md: 1em;
+  --spacing-lg: 2em;
 }
 
 header {
-  background: var(--default-content-background);
-  padding: 3rem;
+  display: flex;
+  column-gap: 25px;
+  justify-content: space-between;
+  padding: 8px 24px !important;
+}
+header #site-name {
+  font-weight: bold;
   color: var(--default-font-color);
-  font-family: var(--default-font-family);
+}
+header #nav-container {
+  display: flex;
+  column-gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+header #nav-container nav {
+  padding: 0;
+  margin: 0;
+}
+header #nav-container nav ul {
+  display: flex;
+  column-gap: 48px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-footer {
-  background: var(--default-content-background);
-  padding: 3rem;
-  color: var(--default-font-color);
-  font-family: var(--default-font-family);
+.hero-section {
+  padding: 20px 0 20px;
+}
+.hero-section h1 {
+  font-size: var(--default-font-size);
 }
 
 /*# sourceMappingURL=main.css.map */

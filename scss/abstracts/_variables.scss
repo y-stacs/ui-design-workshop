@@ -1,4 +1,6 @@
 $primary-color: #2563eb;
-$text-color: #333;
+$text-color: var(--default-font-color);
 $spacing-md: 3rem;
 
+$container-max-width: 1200px;
+$container-padding: 1rem;
