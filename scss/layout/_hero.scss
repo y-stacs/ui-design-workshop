@@ -1,8 +1,88 @@
-.hero-section {
-    padding: 20px 0 20px;
-    // background: var(--default-section-background-color);
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
-    h1 {
-        font-size: var( --default-font-size);
+#hero-section {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  //    height: 240px;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    height: 480px;
+    object-fit: cover;
+  }
+
+  .hero-content-container {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Shifts the text back by 50% of its own width/height for exact centering */
+
+    text-align: center;
+    // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Adds a drop shadow for better contrast against busy backgrounds */
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    .hero-heading {
+      font-size: $font-size-3xl;
+      font-weight: $font-weight-bold;
+      color: $text-color;
     }
+
+    .hero-sub-heading {
+      font-size: $font-size-lg + 2px;
+      color: $neutral-color-white;
+    }
+
+    .hero-buttons {
+        display: flex;
+        column-gap: 16px;
+        justify-content: center;
+
+      .with-background {
+        padding: 12px 40px;
+        background-color: $secondary-color;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+        background-color: $primary-color;
+      }
+      }
+
+      .without-background {
+        padding: 12px 40px;
+        border: 1px solid $border-color;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+        background-color: $primary-color;
+        border-color: $primary-color;
+      }
+      }
+
+      
+    }
+  }
+
+   @include respond-max($mobile-lg) {
+        display: none;
+      }
+
 }

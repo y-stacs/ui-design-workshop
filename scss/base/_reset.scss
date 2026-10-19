@@ -29,14 +29,13 @@ html {
   }
 
   body {
-    min-height: 100vh;
+    // min-height: 100vh;
 
     background-color: var(--default-page-background-color);
     width: 100%;
     max-width: $container-max-width;
     margin-inline: auto;
     padding-inline: $container-padding;
-
     padding: 0 $spacing-3xl $spacing-xl;
 
     display: flex;
@@ -71,6 +70,32 @@ html {
 
       section {
         @include page-main-content-section;
+      }
+    }
+
+    @include respond-max($mobile-lg) {
+      padding: 0 $spacing-sm $spacing-xl;
+      text-align: center;
+
+      main {
+        .section {
+          h1 {
+            font-size: $spacing-2xs;
+          }
+        }
+      }
+    }
+
+    @include respond-between($mobile-lg, $tablet-lg) {
+      padding: 0 $spacing-md $spacing-xl;
+      text-align: center;
+
+      main {
+        .section {
+          h1 {
+            font-size: $spacing-2xs;
+          }
+        }
       }
     }
   }
