@@ -2,8 +2,8 @@
    1. COLORS
 ======================================== */
 //brand colors
-$primary-color: #6FCF97;
-$secondary-color: #16476A;
+$primary-color: #6fcf97;
+$secondary-color: #16476a;
 
 //background colors
 $body-background-color: var(--default-page-background-color);
@@ -13,6 +13,8 @@ $surface-background-color: var(--default-root-background-color);
 $text-color: #1e293b;
 $text-muted: #64748b;
 
+$neutral-color-white: var(--neutral-color-white);
+
 $border-color: #e2e8f0;
 
 //status colors
@@ -21,22 +23,32 @@ $success-color: #16a34a;
 $warning-color: #ffc107;
 $inf-color: #17a2b8;
 
-
 /* ========================================
    2. TYPOGRAPHY
 ======================================== */
-$font-family-base: -apple-system-body, ui-sans-serif, -apple-system, system-ui, Segoe UI,
-        Helvetica, Apple Color Emoji, Arial, sans-serif, Segoe UI Emoji,
-        Segoe UI Symbol;
+$font-family-base:
+  -apple-system-body,
+  ui-sans-serif,
+  -apple-system,
+  system-ui,
+  Segoe UI,
+  Helvetica,
+  Apple Color Emoji,
+  Arial,
+  sans-serif,
+  Segoe UI Emoji,
+  Segoe UI Symbol;
 $font-family-heading: Georgia, serif;
 
-$font-size-xs: 0.75rem;
-$font-size-sm: 0.875rem;
-$font-size-base: 1rem;
-$font-size-lg: 1.125rem;
-$font-size-xl: 1.5rem;
-$font-size-2xl: 2rem;
-$font-size-3xl: 3rem;
+$font-size-2xs: 4px;
+$font-size-xs: 8px;
+$font-size-sm: 12px;
+$font-size-std: 16px;
+$font-size-md: 20px;
+$font-size-lg: 24px;
+$font-size-xl: 32px;
+$font-size-2xl: 40px;
+$font-size-3xl: 48px;
 
 $font-weight-normal: 400;
 $font-weight-medium: 500;
@@ -44,7 +56,6 @@ $font-weight-bold: 700;
 
 $line-height-base: 1.6;
 $line-height-heading: 1.2;
-
 
 /* ========================================
    3. SPACING
@@ -59,6 +70,21 @@ $spacing-xl: 32px;
 $spacing-2xl: 40px;
 $spacing-3xl: 48px;
 
+/* ========================================
+   5. RESPONSIVE BREAKPOINTS
+======================================== */
+
+$mobile-sm: 320px;
+$mobile-md: 375px;
+$mobile-lg: 480px;
+
+$tablet-sm: 680px;
+$tablet-md: 768px;
+$tablet-lg: 920px;
+
+$desktop-sm: 992px;
+$desktop-md: 1200px;
+$desktop-lg: 1400px;
 
 /* ========================================
    4. LAYOUT
@@ -68,23 +94,6 @@ $container-padding: 1rem;
 
 $header-height: 4rem;
 $sidebar-width: 260px;
-
-
-/* ========================================
-   5. RESPONSIVE BREAKPOINTS
-======================================== */
-
-  $mobile-pre-sm: 320px;
-  $mobile-md: 375px;
-  $mobile-lg: 480px;
-
-  $tablet-sm: 680px;
-  $tablet-md: 768px;
-  $tablet-lg: 920px;
-
-  $desktop-sm: 992px;
-  $desktop-md: 1200px;
-  $desktop-lg: 1400px;
 
 /* ========================================
    6. BORDERS AND SHADOWS
@@ -100,13 +109,11 @@ $shadow-sm: 0 1px 2px rgb(0 0 0 / 5%);
 $shadow-md: 0 4px 6px rgb(0 0 0 / 10%);
 $shadow-lg: 0 10px 20px rgb(0 0 0 / 15%);
 
-
 /* ========================================
    7. TRANSITIONS
 ======================================== */
 $transition-fast: 150ms ease-in-out;
 $transition-base: 250ms ease-in-out;
-
 
 /* ========================================
    8. Z-INDEX

@@ -8,10 +8,10 @@
    3. SPACING
 ======================================== */
 /* ========================================
-   4. LAYOUT
+   5. RESPONSIVE BREAKPOINTS
 ======================================== */
 /* ========================================
-   5. RESPONSIVE BREAKPOINTS
+   4. LAYOUT
 ======================================== */
 /* ========================================
    6. BORDERS AND SHADOWS
@@ -53,7 +53,6 @@ html p {
   padding: 0;
 }
 html body {
-  min-height: 100vh;
   background-color: var(--default-page-background-color);
   width: 100%;
   max-width: 1200px;
@@ -89,6 +88,24 @@ html body main {
 html body main section {
   padding: 24px;
   background-color: var(--default-section-background-color);
+}
+@media (max-width: 480px) {
+  html body {
+    padding: 0 12px 32px;
+    text-align: center;
+  }
+  html body main .section h1 {
+    font-size: 4px;
+  }
+}
+@media (min-width: 480px) and (max-width: 920px) {
+  html body {
+    padding: 0 20px 32px;
+    text-align: center;
+  }
+  html body main .section h1 {
+    font-size: 4px;
+  }
 }
 
 body {
@@ -155,11 +172,72 @@ header #nav-container nav ul {
   }
 }
 
-.hero-section {
-  padding: 20px 0 20px;
+#hero-section {
+  width: 100%;
+  display: inline-block;
+  position: relative;
 }
-.hero-section h1 {
-  font-size: var(--default-font-size);
+#hero-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+  height: 480px;
+  object-fit: cover;
+}
+#hero-section .hero-content-container {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Shifts the text back by 50% of its own width/height for exact centering */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+#hero-section .hero-content-container .hero-heading {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1e293b;
+}
+#hero-section .hero-content-container .hero-sub-heading {
+  font-size: 26px;
+  color: var(--neutral-color-white);
+}
+#hero-section .hero-content-container .hero-buttons {
+  display: flex;
+  column-gap: 16px;
+  justify-content: center;
+}
+#hero-section .hero-content-container .hero-buttons .with-background {
+  padding: 12px 40px;
+  background-color: #16476a;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#hero-section .hero-content-container .hero-buttons .with-background:hover {
+  background-color: #6fcf97;
+}
+#hero-section .hero-content-container .hero-buttons .without-background {
+  padding: 12px 40px;
+  border: 1px solid #e2e8f0;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#hero-section .hero-content-container .hero-buttons .without-background:hover {
+  background-color: #6fcf97;
+  border-color: #6fcf97;
+}
+@media (max-width: 480px) {
+  #hero-section {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
