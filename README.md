@@ -14,7 +14,7 @@
 
 # Description
 
-**UI-Design-Workshop** - A collection of HTML and CSS projects for practicing responsive web design, modern layouts, and mobile-first development.
+**UI-Design-Workshop** - Responsive web interfaces built with semantic HTML, modern CSS &  SCSS, and mobile-first design principles..
 
 
 
