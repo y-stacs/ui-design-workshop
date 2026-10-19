@@ -1,3 +1,33 @@
+/* ========================================
+   1. COLORS
+======================================== */
+/* ========================================
+   2. TYPOGRAPHY
+======================================== */
+/* ========================================
+   3. SPACING
+======================================== */
+/* ========================================
+   4. LAYOUT
+======================================== */
+/* ========================================
+   5. RESPONSIVE BREAKPOINTS
+======================================== */
+/* ========================================
+   6. BORDERS AND SHADOWS
+======================================== */
+/* ========================================
+   7. TRANSITIONS
+======================================== */
+/* ========================================
+   8. Z-INDEX
+======================================== */
+/* ========================================
+   1. REUSABLE RESPONSIVE BREAKPOINTS
+======================================== */
+/* Minimum width */
+/* Maximum width */
+/* Between two screen widths */
 *,
 *::before,
 *::after {
@@ -7,6 +37,8 @@
 * {
   margin: 0;
   padding: 0;
+  color: #1e293b;
+  font-family: -apple-system-body, ui-sans-serif, -apple-system, system-ui, Segoe UI, Helvetica, Apple Color Emoji, Arial, sans-serif, Segoe UI Emoji, Segoe UI Symbol;
 }
 
 html {
@@ -18,20 +50,7 @@ html h2,
 html h3,
 html p {
   margin: 0;
-}
-html body a {
-  color: var(--hyperlink-color);
-}
-html body button {
-  cursor: pointer;
-}
-html body img,
-html body picture,
-html body video,
-html body canvas,
-html body svg {
-  display: block;
-  max-width: 100%;
+  padding: 0;
 }
 html body {
   min-height: 100vh;
@@ -45,67 +64,73 @@ html body {
   flex-direction: column;
   row-gap: 16px;
 }
+html body button {
+  cursor: pointer;
+}
+html body img,
+html body picture,
+html body video,
+html body canvas,
+html body svg {
+  display: block;
+  max-width: 100%;
+}
 html body .container,
 html body header,
 html body footer,
 html body main {
   width: 100%;
-  border: 1px solid lightgrey;
-  padding: 24px;
 }
 html body main {
   display: flex;
   flex-direction: column;
-  row-gap: 4px;
+  row-gap: 24px;
 }
 html body main section {
-  padding-bottom: 16px;
-  border-radius: 4px;
+  padding: 24px;
+  background-color: var(--default-section-background-color);
 }
 
 body {
   font-family: var(--default-font-family);
   line-height: 1.6;
 }
-
-h1,
-h2,
-h3 {
-  line-height: 1.6;
+body h1,
+body h2,
+body h3 {
+  padding-bottom: 12px;
+  text-transform: uppercase;
 }
-
-a {
+body p {
+  font-size: var(--default-font-size);
+  margin-bottom: 16px;
+}
+body a {
   text-decoration: none;
+  color: var(--hyperlink-color);
 }
 
 :root {
-  --neutral-color-black: #000000;
-  --neutral-color-white: #ffffff;
-  --neutral-color-red: #d62828;
+  --neutral-color-black: rgba(0, 0, 0, 1);
+  --neutral-color-white: rgba(255, 255, 255, 1);
   --default-font-size: 16px;
-  --default-font-color: lightslategray;
-  --default-font-family:
-    -apple-system-body, ui-sans-serif, -apple-system, system-ui, Segoe UI,
-    Helvetica, Apple Color Emoji, Arial, sans-serif, Segoe UI Emoji,
-    Segoe UI Symbol;
-  --hyperlink-color: #db1a1a;
-  --default-root-background-color: #f1f1f1;
-  --default-page-background-color: #ffffff;
-  --default-section-background-color: #f5f5f5;
-  --spacing-sm: 0.5em;
-  --spacing-md: 1em;
-  --spacing-lg: 2em;
+  --default-font-color: rgba(30, 41, 59, 1);
+  --hyperlink-color: rgba(219, 26, 26, 1);
+  --default-root-background-color: rgba(241, 241, 241, 1);
+  --default-page-background-color: rgba(255, 255, 255, 1);
+  --default-section-background-color: rgba(245, 245, 245, 0.6);
 }
 
 header {
   display: flex;
   column-gap: 25px;
   justify-content: space-between;
-  padding: 8px 24px !important;
+  padding: 8px 0 !important;
 }
 header #site-name {
+  font-size: 24px;
   font-weight: bold;
-  color: var(--default-font-color);
+  color: #1e293b;
 }
 header #nav-container {
   display: flex;
@@ -123,6 +148,11 @@ header #nav-container nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+@media (max-width: 480px) {
+  header #nav-container nav ul {
+    display: none;
+  }
 }
 
 .hero-section {

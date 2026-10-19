@@ -1,28 +1,19 @@
 :root {
 
     //neutral colors
-      --neutral-color-black: #000000;
-      --neutral-color-white: #ffffff;
-      --neutral-color-red: #d62828;
+      --neutral-color-black: rgba(0, 0, 0, 1);
+      --neutral-color-white: rgba(255, 255, 255, 1);
 
     //global font properties
       --default-font-size: 16px;
-      --default-font-color: lightslategray;
-      --default-font-family:
-        -apple-system-body, ui-sans-serif, -apple-system, system-ui, Segoe UI,
-        Helvetica, Apple Color Emoji, Arial, sans-serif, Segoe UI Emoji,
-        Segoe UI Symbol;
+      // --default-font-color: rgba(65, 90, 119, 1);
+      --default-font-color: rgba(30, 41, 59, 1);
 
-      --hyperlink-color: #db1a1a;
+      //global hyperlink font properties
+      --hyperlink-color: rgba(219, 26, 26, 1);
 
     //global background-colors
-      --default-root-background-color: #f1f1f1;
-      --default-page-background-color: #ffffff;
-      --default-section-background-color: #f5f5f5;
-
-    //global spacing properties
-      --spacing-sm: 0.5em;
-      --spacing-md: 1em;
-      --spacing-lg: 2em;
-
+      --default-root-background-color: rgba(241, 241, 241, 1);
+      --default-page-background-color: rgba(255, 255, 255, 1);
+      --default-section-background-color: rgba(245, 245, 245, 0.6);
 }

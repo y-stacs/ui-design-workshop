@@ -1,6 +1,117 @@
-$primary-color: #2563eb;
-$text-color: var(--default-font-color);
-$spacing-md: 3rem;
+/* ========================================
+   1. COLORS
+======================================== */
+//brand colors
+$primary-color: #6FCF97;
+$secondary-color: #16476A;
 
+//background colors
+$body-background-color: var(--default-page-background-color);
+$surface-background-color: var(--default-root-background-color);
+
+//text colors
+$text-color: #1e293b;
+$text-muted: #64748b;
+
+$border-color: #e2e8f0;
+
+//status colors
+$error-color: #dc2626;
+$success-color: #16a34a;
+$warning-color: #ffc107;
+$inf-color: #17a2b8;
+
+
+/* ========================================
+   2. TYPOGRAPHY
+======================================== */
+$font-family-base: -apple-system-body, ui-sans-serif, -apple-system, system-ui, Segoe UI,
+        Helvetica, Apple Color Emoji, Arial, sans-serif, Segoe UI Emoji,
+        Segoe UI Symbol;
+$font-family-heading: Georgia, serif;
+
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-base: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.5rem;
+$font-size-2xl: 2rem;
+$font-size-3xl: 3rem;
+
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$line-height-base: 1.6;
+$line-height-heading: 1.2;
+
+
+/* ========================================
+   3. SPACING
+======================================== */
+$spacing-2xs: 4px;
+$spacing-xs: 8px;
+$spacing-sm: 12px;
+$spacing-std: 16px;
+$spacing-md: 20px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-2xl: 40px;
+$spacing-3xl: 48px;
+
+
+/* ========================================
+   4. LAYOUT
+======================================== */
 $container-max-width: 1200px;
 $container-padding: 1rem;
+
+$header-height: 4rem;
+$sidebar-width: 260px;
+
+
+/* ========================================
+   5. RESPONSIVE BREAKPOINTS
+======================================== */
+
+  $mobile-pre-sm: 320px;
+  $mobile-md: 375px;
+  $mobile-lg: 480px;
+
+  $tablet-sm: 680px;
+  $tablet-md: 768px;
+  $tablet-lg: 920px;
+
+  $desktop-sm: 992px;
+  $desktop-md: 1200px;
+  $desktop-lg: 1400px;
+
+/* ========================================
+   6. BORDERS AND SHADOWS
+======================================== */
+$border-width: 1px;
+
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 16px;
+$border-radius-full: 9999px;
+
+$shadow-sm: 0 1px 2px rgb(0 0 0 / 5%);
+$shadow-md: 0 4px 6px rgb(0 0 0 / 10%);
+$shadow-lg: 0 10px 20px rgb(0 0 0 / 15%);
+
+
+/* ========================================
+   7. TRANSITIONS
+======================================== */
+$transition-fast: 150ms ease-in-out;
+$transition-base: 250ms ease-in-out;
+
+
+/* ========================================
+   8. Z-INDEX
+======================================== */
+$z-index-dropdown: 100;
+$z-index-header: 200;
+$z-index-overlay: 900;
+$z-index-modal: 1000;

@@ -1,17 +1,21 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 
 header {
   display: flex;
   column-gap: 25px;
   justify-content: space-between;
-  padding: 8px 24px !important;
+  padding: 8px 0 !important;
 
   #site-name {
     // border: 1px solid lightgrey;
+    font-size: $spacing-lg;
     font-weight: bold;
     color: $text-color;
   }
 
+  //display all items horizontally
   #nav-container {
     display: flex;
     column-gap: 25px;
@@ -20,11 +24,13 @@ header {
 
     // border: 1px solid lightgrey;
 
+    //remove whtie-spaces
     nav {
       padding: 0;
       margin: 0;
     }
 
+    //display hyperlinks horizontally
     nav ul {
       display: flex;
       column-gap: 48px;
@@ -32,6 +38,11 @@ header {
       padding: 0;
       margin: 0;
       // border: 1px solid lightgrey;
+
+      //Example of responsive breakpoint
+      @include respond-max($mobile-lg) {
+        display: none;
+      }
     }
   }
 }

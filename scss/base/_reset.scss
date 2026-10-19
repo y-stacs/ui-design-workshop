@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 *,
 *::before,
@@ -10,7 +11,8 @@
 * {
   margin: 0;
   padding: 0;
-  // color: $text-color;
+  color: $text-color;
+  font-family: $font-family-base;
 }
 
 html {
@@ -23,13 +25,23 @@ html {
   h3,
   p {
     margin: 0;
+    padding: 0;
   }
 
   body {
-    //default hyperlinks font color
-    a {
-      color: var(--hyperlink-color);
-    }
+    min-height: 100vh;
+
+    background-color: var(--default-page-background-color);
+    width: 100%;
+    max-width: $container-max-width;
+    margin-inline: auto;
+    padding-inline: $container-padding;
+
+    padding: 0 $spacing-3xl $spacing-xl;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: $spacing-std;
 
     //mouse pointer cursor on any button by default
     button {
@@ -46,43 +58,19 @@ html {
       max-width: 100%;
     }
 
-    min-height: 100vh;
-
-    background-color: var(--default-page-background-color);
-    width: 100%;
-    max-width: $container-max-width;
-    margin-inline: auto;
-    padding-inline: $container-padding;
-
-    padding: 0 48px 32px;
-
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
-
     .container,
     header,
     footer,
     main {
       width: 100%;
-      border: 1px solid lightgrey;
-      padding: 24px;
       // border-radius: 4px;
     }
 
     main {
-      display: flex;
-      flex-direction: column;
-      row-gap: 4px;
+      @include page-main-content;
 
       section {
-        // border: 1px solid lightgrey;
-        padding-bottom: 16px;
-        border-radius: 4px;
-
-        // .page-summary {
-        //   page name and descrition section
-        // }
+        @include page-main-content-section;
       }
     }
   }

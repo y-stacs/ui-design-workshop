@@ -1,0 +1,39 @@
+
+@use "../abstracts/variables" as *;
+/* ========================================
+   1. REUSABLE RESPONSIVE BREAKPOINTS
+======================================== */
+
+/* Minimum width */
+@mixin respond-min($min) {
+  @media (min-width: $min) {
+    @content;
+  }
+}
+
+/* Maximum width */
+@mixin respond-max($max) {
+  @media (max-width: $max) {
+    @content;
+  }
+}
+
+/* Between two screen widths */
+@mixin respond-between($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin page-main-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: $spacing-lg;
+}
+
+@mixin page-main-content-section {
+  padding: $spacing-lg;
+  background-color: var(--default-section-background-color);
+}
+
+
