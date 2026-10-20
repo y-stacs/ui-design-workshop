@@ -10,7 +10,7 @@ header {
 
   #site-name {
     // border: 1px solid lightgrey;
-    font-size: $spacing-lg;
+    font-size: $spacing-24;
     font-weight: bold;
     color: $text-color;
   }
@@ -40,7 +40,7 @@ header {
       // border: 1px solid lightgrey;
 
       //Example of responsive breakpoint
-      @include respond-max($mobile-lg) {
+      @include respond-max($mobile-480) {
         display: none;
       }
     }

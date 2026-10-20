@@ -37,11 +37,11 @@ html {
     max-width: $container-max-width;
     margin-inline: auto;
     padding-inline: $container-padding;
-    padding: 0 $spacing-3xl $spacing-xl;
+    padding: 0 $spacing-40 $spacing-32;
 
     display: flex;
     flex-direction: column;
-    row-gap: $spacing-std;
+    row-gap: $spacing-20;
 
     box-shadow: $shadow-lg;
 
@@ -76,30 +76,30 @@ html {
       }
     }
 
-    @include respond-max($mobile-lg) {
-      padding: 0 $spacing-sm $spacing-xl;
+    @include respond-max($mobile-480) {
+      padding: 0 $spacing-12 $spacing-32;
       text-align: center;
 
       main {
-        .section {
+        section {
           h1 {
-            font-size: $spacing-2xs;
+            font-size: $font-size-24;
+          }
+
+           h2 {
+            font-size: $font-size-16 + 0.13rem;
+          }
+
+           h3 {
+            font-size: $font-size-12 ;
           }
         }
       }
     }
 
-    @include respond-between($mobile-lg, $tablet-lg) {
-      padding: 0 $spacing-md $spacing-xl;
+    @include respond-between($mobile-480, $tablet-920) {
+      padding: 0 $spacing-20 $spacing-32;
       text-align: center;
-
-      main {
-        .section {
-          h1 {
-            font-size: $spacing-2xs;
-          }
-        }
-      }
     }
   }
 }

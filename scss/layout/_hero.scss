@@ -33,13 +33,13 @@
     row-gap: 16px;
 
     .hero-heading {
-      font-size: $font-size-3xl;
+      font-size: $font-size-40;
       font-weight: $font-weight-bold;
       color: $text-color;
     }
 
     .hero-sub-heading {
-      font-size: $font-size-lg + 2px;
+      font-size: $font-size-24;
       color: $neutral-color-white;
     }
 
@@ -81,7 +81,7 @@
     }
   }
 
-   @include respond-max($mobile-lg) {
+   @include respond-max($mobile-480) {
         display: none;
       }
 

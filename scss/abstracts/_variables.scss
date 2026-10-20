@@ -38,18 +38,8 @@ $font-family-base:
   sans-serif,
   Segoe UI Emoji,
   Segoe UI Symbol;
+  
 $font-family-heading: Georgia, serif;
-
-$font-size-2xs: 4px;
-$font-size-xs: 8px;
-$font-size-sm: 12px;
-$font-size-std: 16px;
-$font-size-md: 20px;
-$font-size-lg: 24px;
-$font-size-xl: 32px;
-$font-size-2xl: 40px;
-$font-size-3xl: 48px;
-
 $font-weight-normal: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
@@ -57,39 +47,53 @@ $font-weight-bold: 700;
 $line-height-base: 1.6;
 $line-height-heading: 1.2;
 
+$font-size-4: 0.3rem; //2xs
+$font-size-8: 0.5rem; //xs
+$font-size-12: 0.8rem; //sm
+
+$font-size-16: 1rem; //std
+$font-size-20: 1.3rem; //md
+$font-size-24: 1.5rem; //lg
+
+$font-size-32: 2rem; //xl
+$font-size-40: 3rem; //2xl
+$font-size-40: 3rem; //3xl
+
 /* ========================================
    3. SPACING
 ======================================== */
-$spacing-2xs: 4px;
-$spacing-xs: 8px;
-$spacing-sm: 12px;
-$spacing-std: 16px;
-$spacing-md: 20px;
-$spacing-lg: 24px;
-$spacing-xl: 32px;
-$spacing-2xl: 40px;
-$spacing-3xl: 48px;
+$spacing-4: 0.3rem; //2xs
+$spacing-8: 0.5rem; //xs
+$spacing-12: 0.8rem; //sm
+
+$spacing-16: 1rem; //std
+$spacing-20: 1.3rem; //md
+$spacing-24: 1.5rem; //lg
+
+$spacing-32: 2rem; //xl
+$spacing-40: 3rem; //2xl
+$spacing-48: 3rem; //3xl
 
 /* ========================================
    5. RESPONSIVE BREAKPOINTS
 ======================================== */
 
-$mobile-sm: 320px;
-$mobile-md: 375px;
-$mobile-lg: 480px;
+$mobile-320: 20rem; //mobile-sm
+$mobile-375: 23.438rem; //mobile-md
+$mobile-480: 30rem; //mobile-lg
 
-$tablet-sm: 680px;
-$tablet-md: 768px;
-$tablet-lg: 920px;
+$tablet-680: 42.5rem; //tablet-sm
+$tablet-768: 48rem; //tablet-md
+$tablet-920: 57.5rem; //tablet-lg
 
-$desktop-sm: 992px;
-$desktop-md: 1200px;
-$desktop-lg: 1400px;
+$desktop-992: 62rem; //desktop-sm
+$desktop-1200: 75rem; //desktop-md
+$desktop-1400: 87.5rem; //desktop-lg
 
 /* ========================================
    4. LAYOUT
 ======================================== */
-$container-max-width: 1200px;
+$container-max-width: 75rem;
 $container-padding: 1rem;
 $header-height: 4rem;
 
