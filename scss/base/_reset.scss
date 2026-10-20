@@ -18,6 +18,7 @@
 html {
   background-color: var(--default-root-background-color);
 
+
   //remove any space around these elements
   body,
   h1,
@@ -41,6 +42,8 @@ html {
     display: flex;
     flex-direction: column;
     row-gap: $spacing-std;
+
+    box-shadow: $shadow-lg;
 
     //mouse pointer cursor on any button by default
     button {
