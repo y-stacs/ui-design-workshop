@@ -5,13 +5,13 @@
   width: 100%;
   display: inline-block;
   position: relative;
-  //    height: 240px;
+  //height: 240px;
 
   img {
     width: 100%;
     height: auto;
     display: block;
-    height: 480px;
+    height: 460px;
     object-fit: cover;
   }
 
@@ -30,7 +30,7 @@
 
     display: flex;
     flex-direction: column;
-    row-gap: 16px;
+    row-gap: $spacing-16 + 0.125rem;
 
     .hero-heading {
       font-size: $font-size-40;
@@ -44,45 +44,84 @@
     }
 
     .hero-buttons {
-        display: flex;
-        column-gap: 16px;
-        justify-content: center;
+      display: flex;
+      column-gap: $spacing-16;
+      justify-content: center;
 
-      .with-background {
-        padding: 12px 40px;
-        background-color: $secondary-color;
+      .btn {
+        padding: 4px 40px;
         color: #ffffff;
         text-decoration: none;
-        font-size: 16px;
+        font-size: $font-size-16;
         cursor: pointer;
         transition: background-color 0.3s ease;
 
         &:hover {
-        background-color: $primary-color;
+          background-color: $primary-color;
+          border-color: $primary-color;
+        }
       }
+
+      .with-background {
+        background-color: $secondary-color;
+        border: 1px solid $secondary-color;
       }
 
       .without-background {
-        padding: 12px 40px;
         border: 1px solid $border-color;
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-
-        &:hover {
-        background-color: $primary-color;
-        border-color: $primary-color;
       }
-      }
-
-      
     }
   }
 
-   @include respond-max($mobile-480) {
-        display: none;
+  //Layout on tablet
+  @include respond-between($tablet-680, $tablet-920) {
+    img {
+      height: 400px;
+    }
+
+    .hero-content-container {
+      .hero-heading {
+        font-size: $font-size-32;
       }
 
+      .hero-sub-heading {
+        font-size: $font-size-16 + 0.125rem;
+        color: $neutral-color-white;
+      }
+
+      .hero-buttons {
+        .btn {
+          padding: 4px $spacing-24;
+          text-decoration: none;
+          font-size: $font-size-12;
+        }
+      }
+    }
+  }
+
+  //Layout on mobile
+  @include respond-max($tablet-680) {
+    img {
+      height: 340px;
+    }
+
+    .hero-content-container {
+      .hero-heading {
+        font-size: $font-size-32 - 0.25rem;
+      }
+
+      .hero-sub-heading {
+        font-size: $font-size-16 + 0.125rem;
+        color: $neutral-color-white;
+      }
+
+      .hero-buttons {
+        .btn {
+          padding: 4px $spacing-24;
+          text-decoration: none;
+          font-size: $font-size-12;
+        }
+      }
+    }
+  }
 }
