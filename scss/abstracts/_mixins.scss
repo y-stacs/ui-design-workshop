@@ -28,11 +28,18 @@
 @mixin page-main-content {
   display: flex;
   flex-direction: column;
-  row-gap: $spacing-24;
+  // row-gap: $spacing-24;
 }
 
 @mixin page-main-content-section {
-  padding: $spacing-24;
+  padding: $spacing-40;
+}
+
+@mixin without-bg-color {
+  background-color: $neutral-color-white;
+}
+
+@mixin with-bg-color {
   background-color: var(--default-section-background-color);
 }
 

@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <!--universal character set that includes pretty much any character-->
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <!-- helps webpages adapt to mobile devices and different screen widths-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -12,7 +12,8 @@
     <!--a brief summary of the webpage-->
     <meta
       name="description"
-      content="Learn the fundamentals for builiding responsive UIs using HTML, SCSS, and CSS."/>
+      content="Learn the fundamentals for builiding responsive UIs using HTML, SCSS, and CSS."
+    />
     <!--a brief summary of the webpage-->
     <meta name="keywords" content="HTML, CSS, web development, tutorial" />
     <!-- provides instructions to search engine crawlers -->
@@ -53,22 +54,16 @@
     <!-- External stylesheet -->
     <link rel="stylesheet" href="css/main.css" />
 
-   
-
     <!-- External js file -->
     <script src="js/masterpage-layouts-loader.js" defer></script>
-
-  
   </head>
 
   <body>
-    
     <!-- 
         page-header
         include header layout 
     -->
     <div data-include="layouts/header.html"></div>
-
     <!-- 
         hero section
         include hero layout 
@@ -77,10 +72,66 @@
 
     <!-- page main-content -->
     <main class="home-main-comtainer" id="home-main-comtainer">
+      <!-- page section -->
+      <section class="cards-section">
+        <h3>core skills set</h3>
+        <div class="cards-container">
+          <div class="card">
+            <div class="card-icon-section">
+              <i
+                data-lucide="monitor-smartphone"
+                aria-hidden="true"
+                class="card-icon"
+              ></i>
+            </div>
+            <div class="card-heading-section">HTML + CSS</div>
+            <div class="card-desc-section">Responsive UI</div>
+            <!-- <div class="card-button-section">
+              <a href="https://example.com" class="btn with-background">
+                Learn more..
+              </a>
+            </div> -->
+          </div>
+
+          <div class="card">
+            <div class="card-icon-section">
+              <i
+                data-lucide="file-braces-corner"
+                aria-hidden="true"
+                class="card-icon"
+              ></i>
+            </div>
+            <div class="card-heading-section">javascript</div>
+            <div class="card-desc-section">Interactive UI</div>
+            <!-- <div class="card-button-section">
+              <a href="https://example.com" class="btn with-background">
+                Learn more..
+              </a>
+            </div> -->
+          </div>
+
+          <div class="card">
+            <div class="card-icon-section">
+              <i
+                data-lucide="git-pull-request-arrow"
+                aria-hidden="true"
+                class="card-icon"
+              ></i>
+            </div>
+            <div class="card-heading-section">github</div>
+            <div class="card-desc-section">Version Control</div>
+            <!-- <div class="card-button-section">
+              <a href="https://example.com" class="btn with-background">
+                Learn more..
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </section>
 
       <!-- page section -->
-      <section class="page-summary ">
-        <h1>Welcome</h1>
+      <section class="objectives-section">
+        <h3>objective</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -88,38 +139,12 @@
           aliquip ex ea commodo consequat.
         </p>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
+        <div class="button-section">
+          <a href="https://example.com" class="btn with-background">
+            Learn more..
+          </a>
+        </div>
         
-      </section>
-
-       <!-- page section -->
-      <section>
-        <h2>section heading a</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-          <a href="#">hyperlink example 1</a>
-          <a href="#">hyperlink example 1</a>
-        </p>
-      </section>
-
-      <!-- page section -->
-      <section>
-        <h2>section heading b</h2>
-        <h3>section sub-heading</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
       </section>
     </main>
 
@@ -129,6 +154,10 @@
     -->
     <div data-include="layouts/footer.html"></div>
 
+    <!-- for icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
-
 </html>

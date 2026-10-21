@@ -18,12 +18,12 @@
 html {
   background-color: var(--default-root-background-color);
 
-
   //remove any space around these elements
   body,
-  h1,
   h2,
   h3,
+  h4,
+  .hero-section,
   p {
     margin: 0;
     padding: 0;
@@ -37,11 +37,11 @@ html {
     max-width: $container-max-width;
     margin-inline: auto;
     padding-inline: $container-padding;
-    padding: 0 $spacing-40 $spacing-32;
+    padding: 0 $spacing-32 $spacing-24;
 
     display: flex;
     flex-direction: column;
-    row-gap: $spacing-20;
+    // row-gap: $spacing-20;
 
     box-shadow: $shadow-lg;
 
@@ -61,11 +61,11 @@ html {
     }
 
     .container,
+    .hero-section,
     header,
     footer,
     main {
       width: 100%;
-      // border-radius: 4px;
     }
 
     main {
@@ -77,21 +77,23 @@ html {
     }
 
     @include respond-max($mobile-480) {
+
       padding: 0 $spacing-12 $spacing-32;
       text-align: center;
 
       main {
         section {
-          h1 {
+
+          h2 {
             font-size: $font-size-24;
           }
 
-           h2 {
+          h3 {
             font-size: $font-size-16 + 0.13rem;
           }
 
-           h3 {
-            font-size: $font-size-12 ;
+          h4 {
+            font-size: $font-size-12;
           }
         }
       }

@@ -14,6 +14,7 @@ $text-color: #1e293b;
 $text-muted: #64748b;
 
 $neutral-color-white: var(--neutral-color-white);
+$neutral-color-black: var(--neutral-color-black);
 
 $border-color: #e2e8f0;
 
@@ -38,7 +39,7 @@ $font-family-base:
   sans-serif,
   Segoe UI Emoji,
   Segoe UI Symbol;
-  
+
 $font-family-heading: Georgia, serif;
 $font-weight-normal: 400;
 $font-weight-medium: 500;
@@ -93,7 +94,7 @@ $desktop-1400: 87.5rem; //desktop-lg
 /* ========================================
    4. LAYOUT
 ======================================== */
-$container-max-width: 75rem;
+$container-max-width: 62rem;
 $container-padding: 1rem;
 $header-height: 4rem;
 
@@ -107,9 +108,15 @@ $border-radius-md: 8px;
 $border-radius-lg: 16px;
 $border-radius-full: 9999px;
 
-$shadow-sm: 0 1px 2px rgb(0 0 0 / 5%);
-$shadow-md: 0 4px 6px rgb(0 0 0 / 10%);
+// $shadow-sm: 0 1px 2px rgb(0 0 0 / 5%);
+// $shadow-md: 0 4px 6px rgb(0 0 0 / 10%);
 $shadow-lg: 0 10px 20px rgb(0 0 0 / 15%);
+
+// $shadow-sm: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+$shadow-sm: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+// $shadow-md: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+$shadow-md: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
 /* ========================================
    7. TRANSITIONS
