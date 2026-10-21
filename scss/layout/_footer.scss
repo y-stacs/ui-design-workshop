@@ -1,2 +1,204 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
+footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: $spacing-12;
+  align-items: center;
+
+  .top-section {
+    display: flex;
+    flex-direction: row;
+    column-gap: $spacing-24;
+
+    .brand-section,
+    .quick-links-section {
+      padding: $spacing-24 $spacing-32;
+      flex: 1;
+      @include with-bg-color;
+    }
+
+    .brand-section {
+      display: flex;
+      flex-direction: column;
+      row-gap: $spacing-4;
+      text-align: left;
+
+      .logo-container {
+        font-size: $font-size-24;
+        font-weight: $font-weight-bold;
+      }
+
+      .social-pages-container {
+        display: flex;
+        flex-direction: row;
+        column-gap: $spacing-16;
+
+        .bi {
+          font-size: $font-size-16;
+          color: $neutral-color-white;
+          background-color: $neutral-color-black;
+          padding: $spacing-4 - 0.135rem $spacing-8;
+          //   border-radius: $border-radius-md;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .quick-links-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      column-gap: $spacing-24;
+      flex-basis: 1;
+
+      article {
+        flex: 1;
+        background-color: $neutral-color-white;
+        padding: $spacing-16 $spacing-24;
+        text-align: left;
+
+        .article-heading {
+          font-weight: $font-weight-bold;
+          text-transform: uppercase;
+          padding: 0 0 $spacing-12;
+        }
+      }
+    }
+  }
+
+  .bottom-section{
+    padding: $spacing-12 0;
+    width: 100%;
+  }
+
+  //Layout on tablet
+  @include respond-between($tablet-680, $tablet-920) {
+    .top-section {
+      column-gap: $spacing-16;
+      // border: 1px solid grey;
+
+      .brand-section,
+      .quick-links-section {
+        padding: $spacing-16;
+        .tech-stack,
+        .address {
+          font-size: $font-size-12;
+        }
+      }
+
+      .brand-section {
+        display: flex;
+        flex-direction: column;
+        row-gap: $spacing-4;
+        text-align: left;
+
+        .logo-container {
+          font-size: $font-size-20;
+          font-weight: $font-weight-bold;
+        }
+
+        p {
+          font-size: $font-size-12;
+        }
+
+        .social-pages-container {
+          display: flex;
+          flex-direction: row;
+          column-gap: $spacing-16;
+
+          .bi {
+            font-size: $font-size-12;
+            color: $neutral-color-white;
+            background-color: $neutral-color-black;
+            padding: $spacing-4 - 0.25rem $spacing-8 - 0.135rem;
+            //   border-radius: $border-radius-md;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .quick-links-section {
+        display: flex;
+        flex-direction: row;
+        column-gap: $spacing-16;
+
+        article {
+          padding: $spacing-16 $spacing-24;
+
+          .article-heading {
+            font-size: $font-size-12 - 0.125;
+          }
+        }
+      }
+    }
+  }
+
+  //Layout on tablet
+  @include respond-max($tablet-680) {
+    padding: $spacing-24 0 0;
+
+    .top-section {
+      display: flex;
+      flex-direction: column;
+      row-gap: $spacing-16;
+
+      .brand-section,
+      .quick-links-section {
+        width: auto;
+        .tech-stack,
+        .address {
+          font-size: $font-size-12;
+        }
+      }
+
+      .brand-section {
+        display: flex;
+        flex-direction: column;
+        row-gap: $spacing-4;
+        text-align: left;
+
+        .logo-container {
+          font-size: $font-size-20;
+          font-weight: $font-weight-bold;
+        }
+
+        p {
+          font-size: $font-size-12;
+        }
+
+        .social-pages-container {
+          display: flex;
+          flex-direction: row;
+          column-gap: $spacing-16;
+
+          .bi {
+            font-size: $font-size-12;
+            color: $neutral-color-white;
+            background-color: $neutral-color-black;
+            padding: $spacing-4 - 0.25rem $spacing-8 - 0.135rem;
+            //   border-radius: $border-radius-md;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .quick-links-section {
+        display: flex;
+        flex-direction: row;
+        column-gap: $spacing-16;
+        padding: $spacing-16;
+        order: -1;
+
+        article {
+          padding: $spacing-16 $spacing-20;
+
+          .article-heading {
+            font-size: $font-size-12;
+          }
+        }
+      }
+    }
+  }
+}
