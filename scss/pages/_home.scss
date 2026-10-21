@@ -4,15 +4,37 @@
 #home-main-comtainer {
   text-align: center;
 
+  .objectives-section {
+    @include with-bg-color;
+    @include page-main-content-section;
+
+    .button-section {
+      margin-top: $spacing-24;
+      .btn {
+        padding: 8px 32px;
+        color: #ffffff;
+        font-size: $font-size-16;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        background-color: $primary-color;
+
+        &:hover {
+          background-color: $success-color;
+          border-color: $success-color;
+        }
+      }
+    }
+  }
+
   .cards-section {
     @include without-bg-color;
-    @include page-main-content-section;
+    padding: $spacing-40 0;
 
     .cards-container {
       display: flex;
       column-gap: $spacing-24;
       justify-content: space-around;
-      margin: $spacing-24 0;
+      margin: $spacing-24 0 0;
 
       .card {
         display: flex;
@@ -69,31 +91,9 @@
     }
   }
 
-  .objectives-section {
-    @include with-bg-color;
-    @include page-main-content-section;
-
-    .button-section {
-      margin-top: $spacing-24;
-      .btn {
-        padding: 8px 32px;
-        color: #ffffff;
-        font-size: $font-size-16;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        background-color: $primary-color;
-
-        &:hover {
-          background-color: $success-color;
-          border-color: $success-color;
-        }
-      }
-    }
-  }
-
   @include respond-between($mobile-480, $tablet-680) {
     .cards-section {
-      padding: $spacing-40 0;
+      padding: $spacing-40 0 $spacing-24;
 
       .cards-container {
         justify-content: space-evenly;
@@ -138,15 +138,18 @@
 
   @include respond-max($mobile-480) {
     .cards-section {
-      padding: $spacing-40 0 0;
+      padding: $spacing-24 0 0;
 
       .cards-container {
+        padding: $spacing-12 0 0;
         flex-direction: column;
         row-gap: $spacing-16;
+        margin: 0;
 
         .card {
           width: 100%;
           box-shadow: $shadow-md;
+
           .card-icon-section {
             padding: $spacing-8 $spacing-16;
           }
@@ -158,16 +161,6 @@
           .card-desc-section {
             font-size: $font-size-12;
             padding: 0 0 $spacing-8;
-          }
-
-          .card-button-section {
-            .btn {
-              padding: 8px 20px;
-              font-size: $font-size-12 + 0.125;
-              cursor: pointer;
-              text-transform: capitalize;
-              border: 1px solid $primary-color;
-            }
           }
         }
       }
