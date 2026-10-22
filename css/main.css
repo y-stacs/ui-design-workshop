@@ -563,6 +563,12 @@ footer .bottom-section {
   #home-main-comtainer .objectives-section {
     padding: 2rem;
   }
+  #home-main-comtainer .objectives-section p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
