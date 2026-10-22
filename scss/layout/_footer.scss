@@ -177,6 +177,10 @@ footer {
         order: -1;
 
         article {
+          .article-heading {
+            font-size: $font-size-16 - 0.125;
+          }
+
           padding: $spacing-16 $spacing-20;
           font-size: $font-size-16;
         }

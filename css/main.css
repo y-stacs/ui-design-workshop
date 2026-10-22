@@ -329,6 +329,9 @@ footer .bottom-section {
     padding: 1rem;
     order: -1;
   }
+  footer .top-section .quick-links-section article .article-heading {
+    font-size: 0.875rem;
+  }
   footer .top-section .quick-links-section article {
     padding: 1rem 1.3rem;
     font-size: 1rem;
@@ -408,7 +411,7 @@ footer .bottom-section {
 }
 @media (max-width: 42.5rem) {
   #hero-section img {
-    height: 340px;
+    height: 320px;
   }
   #hero-section .hero-content-container .hero-heading {
     font-size: 1.5rem;
@@ -416,10 +419,19 @@ footer .bottom-section {
   #hero-section .hero-content-container .hero-sub-heading {
     font-size: 1.125rem;
     color: var(--neutral-color-white);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
   }
   #hero-section .hero-content-container .hero-buttons .btn {
     padding: 4px 1.5rem;
     font-size: 0.8rem;
+  }
+}
+@media (max-width: 30rem) {
+  #hero-section img {
+    height: 280px;
   }
 }
 
@@ -547,6 +559,9 @@ footer .bottom-section {
   }
   #home-main-comtainer .cards-section .cards-container .card .card-desc-section {
     display: none;
+  }
+  #home-main-comtainer .objectives-section {
+    padding: 2rem;
   }
 }
 

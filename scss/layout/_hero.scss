@@ -99,7 +99,7 @@
   //Layout on mobile
   @include respond-max($tablet-680) {
     img {
-      height: 340px;
+      height: 320px;
     }
 
     .hero-content-container {
@@ -111,6 +111,11 @@
       .hero-sub-heading {
         font-size: $font-size-16 + 0.125rem;
         color: $neutral-color-white;
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
       }
 
       .hero-buttons {
@@ -119,6 +124,14 @@
           font-size: $font-size-12;
         }
       }
+    }
+  }
+
+  
+  //Layout on mobile
+  @include respond-max($mobile-480) {
+    img {
+      height: 280px;
     }
   }
 }
