@@ -38,11 +38,8 @@ html {
     margin-inline: auto;
     padding-inline: $container-padding;
     padding: 0 $spacing-32 $spacing-24;
-
     display: flex;
     flex-direction: column;
-    // row-gap: $spacing-20;
-
     box-shadow: $shadow-lg;
 
     //mouse pointer cursor on any button by default
@@ -83,7 +80,6 @@ html {
     }
 
     @include respond-max($mobile-480) {
-
       padding: 0 $spacing-12 $spacing-32;
       text-align: center;
 

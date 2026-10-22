@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <!--universal character set that includes pretty much any character-->
+    <meta charset="utf-8" />
+    <!-- helps webpages adapt to mobile devices and different screen widths-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--SEO tags -->
+    <!--name of the author or creator of the HTML document-->
+    <meta name="author" content="Yingi Chiqinda" />
+    <!--a brief summary of the webpage-->
+    <meta
+      name="description"
+      content="Learn the fundamentals for builiding responsive UIs using HTML, SCSS, and CSS."
+    />
+    <!--a brief summary of the webpage-->
+    <meta name="keywords" content="HTML, CSS, web development, tutorial" />
+    <!-- provides instructions to search engine crawlers -->
+    <meta name="robots" content="index, follow" />
+    <!-- requests a page refresh every 30 seconds -->
+    <!-- <meta http-equiv="refresh" content="30" /> -->
+
+    <!-- Open Graph / Social sharing tags -->
+    <meta property="og:title" content="Frontend Developer Portfolio" />
+
+    <meta
+      property="og:description"
+      content="Explore my frontend development projects, skills, and portfolio."
+    />
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:url" content="https://example.com/portfolio" />
+
+    <meta
+      property="og:image"
+      content="https://example.com/images/social-preview.jpg"
+    />
+
+    <meta
+      property="og:image:alt"
+      content="Preview of my frontend developer portfolio"
+    />
+
+    <meta property="og:site_name" content="My Portfolio" />
+
+    <meta property="og:locale" content="en_ZA" />
+
+    <!-- page title - on the browser -->
+    <title>My page title</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon.ico" />
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <!-- Bootstrap Icons stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css"
+    />
+
+    <!-- External js file -->
+    <script src="../js/masterpage-layouts-loader.js" defer></script>
+  </head>
+
+  <body>
+    <!-- 
+        page-header
+        include header layout 
+    -->
+    <div data-include="../layouts/header.html"></div>
+    <!-- 
+        hero section
+        include hero layout 
+    -->
+    <div data-include="../layouts/hero.html"></div>
+
+    <!-- page main-content -->
+    <main class="projects-main-comtainer" id="projects-main-comtainer">
+      
+      <!-- page section -->
+      <section class="objectives-section">
+        <secion class="section-heading">
+          <h3>Tech Stack</h3>
+        </secion>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </section>
+
+      <!-- page section -->
+      <section class="cards-section">
+
+        <secion class="section-heading">
+          <h3>recent projects</h3>
+        </secion>
+
+        <div class="cards-container">
+
+          <div class="card">
+            <div class="card-icon-section">
+              <i
+                data-lucide="calculator"
+                aria-hidden="true"
+                class="card-icon"
+              ></i>
+            </div>
+            <div class="card-desc-section">calculator</div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon-section">
+              <i
+                data-lucide="cloud-sun"
+                aria-hidden="true"
+                class="card-icon"
+              ></i>
+            </div>
+            <div class="card-desc-section">weather</div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon-section">
+              <i
+                data-lucide="images"
+                aria-hidden="true"
+                class="card-icon"
+              ></i>
+            </div>
+            <div class="card-desc-section"> Gallery</div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon-section">
+              <i
+                data-lucide="lock-open"
+                aria-hidden="true"
+                class="card-icon"
+              ></i>
+            </div>
+            <div class="card-desc-section">Auth</div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon-section">
+              <i
+                data-lucide="layout-list"
+                aria-hidden="true"
+                class="card-icon"
+              ></i>
+            </div>
+            <div class="card-desc-section">To-do List</div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon-section">
+              <i
+                data-lucide="clock-4"
+                aria-hidden="true"
+                class="card-icon"
+              ></i>
+            </div>
+            <div class="card-desc-section">Clock</div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon-section">
+              <i
+                data-lucide="film"
+                aria-hidden="true"
+                class="card-icon"
+              ></i>
+            </div>
+            <div class="card-desc-section">movies</div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon-section">
+              <i
+                data-lucide="wallet"
+                aria-hidden="true"
+                class="card-icon"
+              ></i>
+            </div>
+            <div class="card-desc-section">Expenses</div>
+          </div>
+
+        </div>
+      </section>
+      
+    </main>
+
+    <!-- 
+        page-footer
+        include footer layout 
+    -->
+    <div data-include="../layouts/footer.html"></div>
+
+    <!-- for icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
