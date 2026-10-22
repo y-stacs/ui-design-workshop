@@ -89,6 +89,11 @@ html body main {
 html body main section {
   padding: 3rem;
 }
+html body .section-heading {
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
 @media (max-width: 30rem) {
   html body {
     padding: 0 0.8rem 2rem;
@@ -118,7 +123,6 @@ body {
 body h2,
 body h3,
 body h4 {
-  padding-bottom: 12px;
   text-transform: uppercase;
 }
 body h4 {
@@ -185,7 +189,7 @@ header #nav-container nav ul li {
 footer {
   display: flex;
   flex-direction: column;
-  row-gap: 0.8rem;
+  row-gap: 1.3rem;
   align-items: center;
 }
 footer .top-section {
@@ -240,8 +244,10 @@ footer .top-section .quick-links-section article .article-heading {
   padding: 0 0 0.8rem;
 }
 footer .bottom-section {
-  padding: 0.8rem 0;
+  text-align: left;
+  padding: 0.5rem 1.5rem;
   width: 100%;
+  border-top: 0.063rem solid rgba(111, 207, 151, 0.5);
 }
 @media (min-width: 42.5rem) and (max-width: 57.5rem) {
   footer .top-section {
@@ -287,7 +293,7 @@ footer .bottom-section {
 }
 @media (max-width: 42.5rem) {
   footer {
-    padding: 1.5rem 0 0;
+    padding: 0;
   }
   footer .top-section {
     display: flex;
@@ -441,6 +447,7 @@ footer .bottom-section {
 #home-main-comtainer .objectives-section {
   background-color: var(--default-section-background-color);
   padding: 3rem;
+  border: none;
 }
 #home-main-comtainer .objectives-section .button-section {
   margin-top: 1.5rem;
@@ -458,14 +465,14 @@ footer .bottom-section {
   border-color: #16a34a;
 }
 #home-main-comtainer .cards-section {
+  border-bottom: 0.063rem solid rgba(111, 207, 151, 0.3);
   background-color: var(--neutral-color-white);
-  padding: 3rem 0;
+  padding-top: 0;
 }
 #home-main-comtainer .cards-section .cards-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   column-gap: 1rem;
-  margin: 1.3rem 0 0;
 }
 #home-main-comtainer .cards-section .cards-container .card {
   display: flex;
@@ -508,11 +515,11 @@ footer .bottom-section {
   border: 1px solid #6fcf97;
 }
 @media (min-width: 30rem) and (max-width: 42.5rem) {
-  #home-main-comtainer .cards-section {
-    padding: 2rem 0 1.5rem;
+  #home-main-comtainer .objectives-section {
+    padding: 2rem 3rem;
   }
-  #home-main-comtainer .cards-section .cards-container {
-    justify-content: space-evenly;
+  #home-main-comtainer .cards-section {
+    padding: 2rem 0;
   }
   #home-main-comtainer .cards-section .cards-container .card .card-icon-section {
     padding: 0.5rem 1rem;
@@ -541,15 +548,16 @@ footer .bottom-section {
 }
 @media (max-width: 30rem) {
   #home-main-comtainer .cards-section {
-    padding: 3rem 0;
+    border: none;
+    padding: 0 0 2rem;
     order: -1;
   }
   #home-main-comtainer .cards-section .cards-container {
-    margin: 0.8rem 0 0;
+    column-gap: 1.3rem;
+    justify-content: center;
   }
   #home-main-comtainer .cards-section .cards-container .card {
-    width: 100%;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 45%;
   }
   #home-main-comtainer .cards-section .cards-container .card .card-icon-section {
     padding: 0.5rem 1rem;
@@ -558,10 +566,13 @@ footer .bottom-section {
     font-size: 0.8rem;
   }
   #home-main-comtainer .cards-section .cards-container .card .card-desc-section {
+    display: block;
+  }
+  #home-main-comtainer .cards-section .cards-container .card.github {
     display: none;
   }
   #home-main-comtainer .objectives-section {
-    padding: 2rem;
+    padding: 0.8rem 3rem 2rem;
   }
   #home-main-comtainer .objectives-section p {
     display: -webkit-box;

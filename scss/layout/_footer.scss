@@ -2,9 +2,10 @@
 @use "../abstracts/mixins" as *;
 
 footer {
+ 
   display: flex;
   flex-direction: column;
-  row-gap: $spacing-12;
+  row-gap: $spacing-20;
   align-items: center;
 
   .top-section {
@@ -69,8 +70,10 @@ footer {
   }
 
   .bottom-section {
-    padding: $spacing-12 0;
+    text-align: left;
+    padding: $spacing-8 $spacing-24;
     width: 100%;
+    border-top: 0.063rem solid rgba($primary-color, 0.5);
   }
 
   //Layout on tablet
@@ -127,7 +130,8 @@ footer {
 
   //Layout on tablet
   @include respond-max($tablet-680) {
-    padding: $spacing-24 0 0;
+    padding: 0;
+    // border: 0.063rem solid rgba($primary-color, 0.5);
 
     .top-section {
       display: flex;

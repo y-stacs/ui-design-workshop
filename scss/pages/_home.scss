@@ -2,11 +2,15 @@
 @use "../abstracts/mixins" as *;
 
 #home-main-comtainer {
+
   text-align: center;
 
   .objectives-section {
     @include with-bg-color;
     @include page-main-content-section;
+    border: none;
+
+    // border: 0.063rem solid rgba($primary-color, 0.5);
 
     .button-section {
       margin-top: $spacing-24;
@@ -27,14 +31,16 @@
   }
 
   .cards-section {
+    border-bottom: 0.063rem solid rgba($primary-color, 0.3);
+
     @include without-bg-color;
-    padding: $spacing-40 0;
+    padding-top: 0;
 
     .cards-container {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
       column-gap: $spacing-16;
-      margin: $spacing-20 0 0;
+      // margin: $spacing-20 0 0;
 
       .card {
         display: flex;
@@ -43,7 +49,6 @@
         align-items: center;
         padding: $spacing-24 $spacing-8;
         width: 12.5rem;
-        // height: 240px;
         box-shadow: $shadow-sm;
         cursor: pointer;
 
@@ -92,12 +97,13 @@
   }
 
   @include respond-between($mobile-480, $tablet-680) {
+    .objectives-section {
+      padding: $spacing-32 $spacing-40;
+    }
     .cards-section {
-      padding: $spacing-32 0 $spacing-24;
+      padding: $spacing-32 0;
 
       .cards-container {
-        justify-content: space-evenly;
-
         .card {
           .card-icon-section {
             padding: $spacing-8 $spacing-16;
@@ -137,16 +143,15 @@
 
   @include respond-max($mobile-480) {
     .cards-section {
-      padding: $spacing-40 0;
+      border: none;
+      padding: 0 0 $spacing-32;
       order: -1;
-      // border: 1px solid lightgray;
 
       .cards-container {
-        margin: $spacing-12 0 0;
-        // border: 1px solid lightgray;
+        column-gap: $spacing-20;
+        justify-content: center;
         .card {
-          width: 100%;
-          box-shadow: $shadow-md;
+          width: 45%;
 
           .card-icon-section {
             padding: $spacing-8 $spacing-16;
@@ -157,6 +162,10 @@
           }
 
           .card-desc-section {
+            display: block;
+          }
+
+          &.github {
             display: none;
           }
         }
@@ -164,15 +173,14 @@
     }
 
     .objectives-section {
-      padding: $spacing-32;
+      padding: $spacing-12 $spacing-40 $spacing-32;
 
       p {
-              display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 3;
-      overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
       }
-
     }
   }
 }
