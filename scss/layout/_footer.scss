@@ -68,7 +68,7 @@ footer {
     }
   }
 
-  .bottom-section{
+  .bottom-section {
     padding: $spacing-12 0;
     width: 100%;
   }
@@ -77,22 +77,16 @@ footer {
   @include respond-between($tablet-680, $tablet-920) {
     .top-section {
       column-gap: $spacing-16;
-      // border: 1px solid grey;
 
       .brand-section,
       .quick-links-section {
         padding: $spacing-16;
-        .tech-stack,
-        .address {
-          font-size: $font-size-12;
-        }
       }
 
       .brand-section {
         display: flex;
         flex-direction: column;
         row-gap: $spacing-4;
-        text-align: left;
 
         .logo-container {
           font-size: $font-size-20;
@@ -113,7 +107,6 @@ footer {
             color: $neutral-color-white;
             background-color: $neutral-color-black;
             padding: $spacing-4 - 0.25rem $spacing-8 - 0.135rem;
-            //   border-radius: $border-radius-md;
             cursor: pointer;
           }
         }
@@ -126,10 +119,7 @@ footer {
 
         article {
           padding: $spacing-16 $spacing-24;
-
-          .article-heading {
-            font-size: $font-size-12 - 0.125;
-          }
+          font-size: $font-size-12;
         }
       }
     }
@@ -147,10 +137,6 @@ footer {
       .brand-section,
       .quick-links-section {
         width: auto;
-        .tech-stack,
-        .address {
-          font-size: $font-size-12;
-        }
       }
 
       .brand-section {
@@ -165,7 +151,7 @@ footer {
         }
 
         p {
-          font-size: $font-size-12;
+          font-size: $font-size-16;
         }
 
         .social-pages-container {
@@ -185,7 +171,6 @@ footer {
       }
 
       .quick-links-section {
-        display: flex;
         flex-direction: row;
         column-gap: $spacing-16;
         padding: $spacing-16;
@@ -193,10 +178,7 @@ footer {
 
         article {
           padding: $spacing-16 $spacing-20;
-
-          .article-heading {
-            font-size: $font-size-12;
-          }
+          font-size: $font-size-16;
         }
       }
     }

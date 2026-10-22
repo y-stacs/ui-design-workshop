@@ -32,9 +32,9 @@
 
     .cards-container {
       display: flex;
-      column-gap: $spacing-24;
-      justify-content: space-around;
-      margin: $spacing-24 0 0;
+      justify-content: space-evenly;
+      column-gap: $spacing-16;
+      margin: $spacing-20 0 0;
 
       .card {
         display: flex;
@@ -93,11 +93,10 @@
 
   @include respond-between($mobile-480, $tablet-680) {
     .cards-section {
-      padding: $spacing-40 0 $spacing-24;
+      padding: $spacing-32 0 $spacing-24;
 
       .cards-container {
         justify-content: space-evenly;
-        margin: $spacing-24 0 0;
 
         .card {
           .card-icon-section {
@@ -138,14 +137,13 @@
 
   @include respond-max($mobile-480) {
     .cards-section {
-      padding: $spacing-24 0 0;
+      padding: $spacing-40 0;
+      order: -1;
+      // border: 1px solid lightgray;
 
       .cards-container {
-        padding: $spacing-12 0 0;
-        flex-direction: column;
-        row-gap: $spacing-16;
-        margin: 0;
-
+        margin: $spacing-12 0 0;
+        // border: 1px solid lightgray;
         .card {
           width: 100%;
           box-shadow: $shadow-md;
@@ -159,8 +157,7 @@
           }
 
           .card-desc-section {
-            font-size: $font-size-12;
-            padding: 0 0 $spacing-8;
+            display: none;
           }
         }
       }
