@@ -1,0 +1,232 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+#projects-main-comtainer {
+  text-align: center;
+
+  .objectives-section {
+    @include with-bg-color;
+    @include page-main-content-section;
+
+    .button-section {
+      margin-top: $spacing-24;
+      .btn {
+        padding: 8px 32px;
+        color: #ffffff;
+        font-size: $font-size-16;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        background-color: $primary-color;
+
+        &:hover {
+          background-color: $success-color;
+          border-color: $success-color;
+        }
+      }
+    }
+  }
+
+  .cards-section {
+    border-bottom: 0.063rem solid rgba($primary-color, 0.3);
+    @include without-bg-color;
+    padding-top: 0;
+
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      gap: $spacing-40 + 0.2rem;
+      flex-wrap: wrap;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        row-gap: $spacing-8;
+        align-items: center;
+        padding: $spacing-12;
+        width: 8.75rem;
+        @include with-bg-color;
+        cursor: pointer;
+        height: auto;
+        border-radius: $spacing-8;
+
+        &:hover {
+          box-shadow: $shadow-sm;
+        }
+
+        .card-icon-section {
+          // padding: $spacing-8 $spacing-16;
+          border-radius: $spacing-8;
+
+          [data-lucide] {
+            width: $font-size-40;
+            height: $font-size-40;
+          }
+
+          svg.lucide {
+            stroke-width: 1px;
+            color: $primary-color;
+          }
+        }
+
+        .card-desc-section {
+          color: $primary-color;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  @include respond-between($tablet-768, $tablet-920) {
+    .cards-section {
+      padding: $spacing-40;
+      .cards-container {
+        justify-content: space-evenly;
+        gap: $spacing-40;
+        flex-wrap: wrap;
+
+        .card {
+          width: 7.5rem;
+
+          .card-icon-section {
+            // padding: $spacing-8 $spacing-16;
+            border-radius: $spacing-8;
+
+            [data-lucide] {
+              width: $font-size-40;
+              height: $font-size-40;
+            }
+
+            svg.lucide {
+              stroke-width: 1px;
+              color: $primary-color;
+            }
+          }
+
+          .card-desc-section {
+            color: $primary-color;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+
+  @include respond-max($tablet-768) {
+    .cards-section {
+      padding: $spacing-32;
+      .cards-container {
+        justify-content: space-evenly;
+        gap: $spacing-24;
+        flex-wrap: wrap;
+
+        .card {
+          width: 7.5rem;
+
+          .card-icon-section {
+            // padding: $spacing-8 $spacing-16;
+            border-radius: $spacing-8;
+
+            [data-lucide] {
+              width: $font-size-40;
+              height: $font-size-40;
+            }
+
+            svg.lucide {
+              stroke-width: 1px;
+              color: $primary-color;
+            }
+          }
+
+          .card-desc-section {
+            color: $primary-color;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+
+  @include respond-between($mobile-480, $tablet-680) {
+    .cards-section {
+      padding: $spacing-32 $spacing-24;
+      order: -1;
+      border: none;
+      .cards-container {
+        justify-content: space-evenly;
+        gap: $spacing-24;
+        flex-wrap: wrap;
+
+        .card {
+          width: 6.25rem;
+
+          .card-icon-section {
+            // padding: $spacing-8 $spacing-16;
+            border-radius: $spacing-8;
+
+            [data-lucide] {
+              width: $font-size-32 + 0.25rem;
+              height: $font-size-32 + 0.25rem;
+            }
+
+            svg.lucide {
+              stroke-width: 1px;
+              color: $primary-color;
+            }
+          }
+
+          .card-desc-section {
+            color: $primary-color;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+
+    .objectives-section {
+      padding: $spacing-32 $spacing-40;
+    }
+  }
+
+  @include respond-max($mobile-480) {
+    .cards-section {
+      padding: 0 0 $spacing-32;
+      order: -1;
+      border: none;
+
+      .cards-container {
+        column-gap: $spacing-20;
+        justify-content: center;
+        .card {
+          width: 45%;
+
+          .card-icon-section {
+            padding: $spacing-8 $spacing-16;
+          }
+
+          .card-heading-section {
+            font-size: $font-size-12;
+          }
+
+          .card-desc-section {
+            display: block;
+          }
+
+          &.github {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .objectives-section {
+      padding: $spacing-12 $spacing-40 $spacing-32;
+
+      p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+      }
+    }
+  }
+}

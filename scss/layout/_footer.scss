@@ -5,7 +5,6 @@ footer {
  
   display: flex;
   flex-direction: column;
-  row-gap: $spacing-20;
   align-items: center;
 
   .top-section {
@@ -71,9 +70,8 @@ footer {
 
   .bottom-section {
     text-align: left;
-    padding: $spacing-8 $spacing-24;
+    padding: $spacing-16 $spacing-20 0;
     width: 100%;
-    border-top: 0.063rem solid rgba($primary-color, 0.5);
   }
 
   //Layout on tablet
@@ -130,7 +128,7 @@ footer {
 
   //Layout on tablet
   @include respond-max($tablet-680) {
-    padding: 0;
+    padding: $spacing-12 0 0;
     // border: 0.063rem solid rgba($primary-color, 0.5);
 
     .top-section {
