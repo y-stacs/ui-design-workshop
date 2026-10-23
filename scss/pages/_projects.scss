@@ -7,8 +7,7 @@
   .objectives-section {
     @include with-bg-color;
     @include page-main-content-section;
-
-    .button-section {
+       .button-section {
       margin-top: $spacing-24;
       .btn {
         padding: 8px 32px;
