@@ -1,10 +1,7 @@
-
 document.addEventListener("DOMContentLoaded", async () => {
   const isGitHubPages = location.hostname.endsWith("github.io");
 
-  const BASE_PATH = isGitHubPages
-    ? "/ui-design-workshop/"
-    : "/";
+  const BASE_PATH = isGitHubPages ? "/ui-design-workshop/" : "/";
 
   const placeholders = document.querySelectorAll("[data-include]");
 
@@ -22,25 +19,24 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         placeholder.innerHTML = await response.text();
 
-        // Update navigation links after loading the component
+        //find and map the layout component path for both localhost and github pages 
         placeholder.querySelectorAll("[data-route]").forEach((link) => {
           const route = link.dataset.route;
           link.href = `${BASE_PATH}${route}`;
         });
+
+        //find and map the image path for both localhost and github pages 
+        placeholder.querySelectorAll("[data-asset]").forEach((img) => {
+          img.src = `${BASE_PATH}${img.dataset.asset}`;
+        });
+
+
       } catch (error) {
         console.error("Component loading error:", error);
       }
-    })
+    }),
   );
 });
-
-
-
-
-
-
-
-
 
 // document.addEventListener("DOMContentLoaded", async () => {
 //   const placeholders = document.querySelectorAll("[data-include]");
