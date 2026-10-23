@@ -45,7 +45,7 @@
         flex-direction: column;
         row-gap: $spacing-8;
         align-items: center;
-        padding: $spacing-24 $spacing-8;
+        padding: $spacing-16 $spacing-8;
         width: 12.5rem;
         box-shadow: $shadow-sm;
         cursor: pointer;
@@ -80,16 +80,6 @@
 
         .card-desc-section {
           padding: 0 0 $spacing-8;
-        }
-
-        .card-button-section {
-          .btn {
-            padding: 8px 20px;
-            font-size: $font-size-12 + 0.125;
-            cursor: pointer;
-            text-transform: capitalize;
-            border: 1px solid $primary-color;
-          }
         }
       }
     }

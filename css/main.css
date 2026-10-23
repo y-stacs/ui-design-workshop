@@ -482,7 +482,7 @@ footer .bottom-section {
   flex-direction: column;
   row-gap: 0.5rem;
   align-items: center;
-  padding: 1.5rem 0.5rem;
+  padding: 1rem 0.5rem;
   width: 12.5rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   cursor: pointer;
@@ -510,13 +510,6 @@ footer .bottom-section {
 }
 #home-main-comtainer .cards-section .cards-container .card .card-desc-section {
   padding: 0 0 0.5rem;
-}
-#home-main-comtainer .cards-section .cards-container .card .card-button-section .btn {
-  padding: 8px 20px;
-  font-size: 0.925rem;
-  cursor: pointer;
-  text-transform: capitalize;
-  border: 1px solid #6fcf97;
 }
 @media (min-width: 30rem) and (max-width: 42.5rem) {
   #home-main-comtainer .objectives-section {
