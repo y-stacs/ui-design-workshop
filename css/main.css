@@ -386,7 +386,6 @@ footer .bottom-section {
   border-radius: 4px;
   padding: 2px 40px;
   color: #ffffff;
-  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -412,11 +411,6 @@ footer .bottom-section {
     font-size: 1.125rem;
     color: var(--neutral-color-white);
   }
-  #hero-section .hero-content-container .hero-buttons .btn {
-    padding: 4px 1.5rem;
-    text-decoration: none;
-    font-size: 0.8rem;
-  }
 }
 @media (max-width: 42.5rem) {
   #hero-section img {
@@ -434,8 +428,8 @@ footer .bottom-section {
     overflow: hidden;
   }
   #hero-section .hero-content-container .hero-buttons .btn {
-    padding: 4px 1.5rem;
-    font-size: 0.8rem;
+    padding: 0.25rem 1.5rem;
+    font-size: 1rem;
   }
 }
 @media (max-width: 30rem) {
