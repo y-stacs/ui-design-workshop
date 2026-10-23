@@ -199,6 +199,7 @@ footer .top-section {
 footer .top-section .brand-section,
 footer .top-section .quick-links-section {
   padding: 1.5rem 2rem;
+  border-radius: 8px;
   flex: 1;
   background-color: var(--default-section-background-color);
 }
@@ -236,6 +237,7 @@ footer .top-section .quick-links-section article {
   background-color: var(--neutral-color-white);
   padding: 1rem 1.5rem;
   text-align: left;
+  border-radius: 8px;
 }
 footer .top-section .quick-links-section article .article-heading {
   font-weight: 700;
@@ -352,6 +354,7 @@ footer .bottom-section {
   display: block;
   height: 380px;
   object-fit: cover;
+  border-radius: 8px;
 }
 #hero-section .hero-content-container {
   width: 70%;
@@ -379,6 +382,7 @@ footer .bottom-section {
   justify-content: center;
 }
 #hero-section .hero-content-container .hero-buttons .btn {
+  border-radius: 4px;
   padding: 2px 40px;
   color: #ffffff;
   font-size: 1rem;
@@ -457,6 +461,7 @@ footer .bottom-section {
   cursor: pointer;
   transition: background-color 0.3s ease;
   background-color: #6fcf97;
+  border-radius: 4px;
 }
 #home-main-comtainer .objectives-section .button-section .btn:hover {
   background-color: #16a34a;
@@ -481,6 +486,7 @@ footer .bottom-section {
   width: 12.5rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   cursor: pointer;
+  border-radius: 8px;
 }
 #home-main-comtainer .cards-section .cards-container .card:hover {
   background-color: var(--default-section-background-color);
@@ -623,7 +629,7 @@ footer .bottom-section {
   background-color: var(--default-section-background-color);
   cursor: pointer;
   height: auto;
-  border-radius: 0.5rem;
+  border-radius: 8px;
 }
 #projects-main-comtainer .cards-section .cards-container .card:hover {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;

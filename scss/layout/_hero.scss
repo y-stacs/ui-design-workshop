@@ -11,6 +11,7 @@
     display: block;
     height: 380px;
     object-fit: cover;
+    border-radius: $border-radius-md;
   }
 
   .hero-content-container {
@@ -45,8 +46,9 @@
       display: flex;
       column-gap: $spacing-16;
       justify-content: center;
-
+      
       .btn {
+        border-radius: $border-radius-sm;
         padding: 2px 40px;
         color: #ffffff;
         font-size: $font-size-16;

@@ -15,6 +15,7 @@ footer {
     .brand-section,
     .quick-links-section {
       padding: $spacing-24 $spacing-32;
+      border-radius: $border-radius-md;
       flex: 1;
       @include with-bg-color;
     }
@@ -58,6 +59,7 @@ footer {
         background-color: $neutral-color-white;
         padding: $spacing-16 $spacing-24;
         text-align: left;
+        border-radius: $border-radius-md;
 
         .article-heading {
           font-weight: $font-weight-bold;
