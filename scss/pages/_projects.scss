@@ -28,7 +28,6 @@
   .cards-section {
     border-bottom: 0.063rem solid rgba($primary-color, 0.3);
     @include without-bg-color;
-    padding-top: 0;
 
     .cards-container {
       display: flex;
