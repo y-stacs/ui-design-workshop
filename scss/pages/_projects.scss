@@ -194,6 +194,7 @@
       .cards-container {
         column-gap: $spacing-20;
         justify-content: center;
+
         .card {
           width: 45%;
 
@@ -212,6 +213,10 @@
           &.github {
             display: none;
           }
+        }
+
+        .clock, .movies {
+          display: none;
         }
       }
     }

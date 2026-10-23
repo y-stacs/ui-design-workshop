@@ -29,15 +29,12 @@
   }
 
   .cards-section {
-    // border-bottom: 0.063rem solid rgba($primary-color, 0.3);
-
     @include without-bg-color;
 
     .cards-container {
       display: flex;
       justify-content: space-around;
       column-gap: $spacing-16;
-      // margin: $spacing-20 0 0;
 
       .card {
         display: flex;
@@ -139,6 +136,7 @@
       .cards-container {
         column-gap: $spacing-20;
         justify-content: center;
+
         .card {
           width: 45%;
 

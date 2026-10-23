@@ -2,7 +2,6 @@
 @use "../abstracts/mixins" as *;
 
 footer {
- 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,7 +40,7 @@ footer {
           color: $neutral-color-white;
           background-color: $neutral-color-black;
           padding: $spacing-4 - 0.135rem $spacing-8;
-          //   border-radius: $border-radius-md;
+          border-radius: $border-radius-sm + 0.25;
           cursor: pointer;
         }
       }

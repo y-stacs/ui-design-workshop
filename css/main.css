@@ -223,6 +223,7 @@ footer .top-section .brand-section .social-pages-container .bi {
   color: var(--neutral-color-white);
   background-color: var(--neutral-color-black);
   padding: 0.165rem 0.5rem;
+  border-radius: 4.25px;
   cursor: pointer;
 }
 footer .top-section .quick-links-section {
@@ -750,6 +751,9 @@ footer .bottom-section {
     display: block;
   }
   #projects-main-comtainer .cards-section .cards-container .card.github {
+    display: none;
+  }
+  #projects-main-comtainer .cards-section .cards-container .clock, #projects-main-comtainer .cards-section .cards-container .movies {
     display: none;
   }
   #projects-main-comtainer .objectives-section {
