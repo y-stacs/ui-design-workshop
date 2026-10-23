@@ -6,7 +6,7 @@
 
   .objectives-section {
     @include with-bg-color;
-     border-radius: $border-radius-md;
+    //  border-radius: $border-radius-md;
 
     .button-section {
       // margin-top: $spacing-24;
@@ -18,7 +18,8 @@
         cursor: pointer;
         transition: background-color 0.3s ease;
         background-color: $primary-color;
-        border-radius: $border-radius-sm;
+        // border-radius: $border-radius-sm;
+         text-transform: capitalize;
 
         &:hover {
           background-color: $success-color;
@@ -45,7 +46,7 @@
         width: 12.5rem;
         box-shadow: $shadow-sm;
         cursor: pointer;
-        border-radius: $border-radius-md;
+        // border-radius: $border-radius-md;
 
         &:hover {
           @include with-bg-color;
