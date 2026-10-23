@@ -451,7 +451,7 @@ footer .bottom-section {
   border-radius: 8px;
 }
 #home-main-comtainer .objectives-section .button-section {
-  margin-top: 1.5rem;
+  padding: 0.5rem;
 }
 #home-main-comtainer .objectives-section .button-section .btn {
   padding: 8px 32px;
