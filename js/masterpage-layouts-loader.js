@@ -5,7 +5,8 @@ const BASE_PATH = isGitHubPages ? "/ui-design-workshop/" : "/";
 function updateAssetPaths(root = document) {
   root.querySelectorAll("[data-asset]").forEach((element) => {
     const assetPath = element.dataset.asset.replace(/^\/+/, "");
-    element.setAttribute("src", `${BASE_PATH}${assetPath}`);
+    element.src = `${BASE_PATH}${assetPath}`;
+    // element.setAttribute("src", `${BASE_PATH}${assetPath}`);
   });
 }
 
