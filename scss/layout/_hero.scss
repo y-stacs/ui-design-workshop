@@ -11,7 +11,7 @@
     display: block;
     height: 380px;
     object-fit: cover;
-    border-radius: $border-radius-md;
+    // border-radius: $border-radius-md;
   }
 
   .hero-content-container {
@@ -48,8 +48,8 @@
       justify-content: center;
       
       .btn {
-        border-radius: $border-radius-sm;
-        padding: 2px 40px;
+        // border-radius: $border-radius-sm;
+        padding: 4px 40px;
         color: #ffffff;
         cursor: pointer;
         transition: background-color 0.3s ease;
