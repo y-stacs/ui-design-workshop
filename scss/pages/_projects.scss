@@ -3,31 +3,10 @@
 
 #projects-main-comtainer {
   text-align: center;
-
-  .objectives-section {
-    @include with-bg-color;
-    @include page-main-content-section;
-    .button-section {
-      margin-top: $spacing-24;
-      .btn {
-        padding: 8px 32px;
-        color: #ffffff;
-        font-size: $font-size-16;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        background-color: $primary-color;
-
-        &:hover {
-          background-color: $success-color;
-          border-color: $success-color;
-        }
-      }
-    }
-  }
+  row-gap: $spacing-16;
 
   .cards-section {
     border-bottom: 0.063rem solid rgba($primary-color, 0.3);
-    @include without-bg-color;
 
     .cards-container {
       display: flex;
