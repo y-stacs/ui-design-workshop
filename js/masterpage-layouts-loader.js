@@ -1,6 +1,16 @@
 const isGitHubPages = location.hostname.endsWith("github.io");
 const BASE_PATH = isGitHubPages ? "/ui-design-workshop/" : "/";
 
+
+//find and map the page URL path for both localhost and github pages
+function updateRoutePaths(root = document) {
+  root.querySelectorAll("[data-route]").forEach((link) => {
+    const route = link.dataset.route.replace(/^\/+/, "");
+    link.href = `${BASE_PATH}${route}`;
+  });
+}
+
+
 //find and map the page-content image path for both localhost and github pages
 function updateAssetPaths(root = document) {
   root.querySelectorAll("[data-asset]").forEach((element) => {
@@ -44,6 +54,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }),
   );
 
+  updateRoutePaths();
   updateAssetPaths();
   
 });
