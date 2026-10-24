@@ -136,8 +136,8 @@
   @include respond-max($tablet-768) {
     .project-description-section {
       padding: $spacing-40 0;
-      // @include without-bg-color;
       .about-container {
+        grid-template-columns: 4fr 6fr;
         column-gap: $spacing-24;
       }
     }
@@ -146,7 +146,7 @@
       padding: $spacing-24;
 
       .tech-container {
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 6fr 4fr;
         column-gap: $spacing-24;
       }
     }
@@ -154,8 +154,14 @@
 
   @include respond-between($mobile-480, $tablet-680) {
     row-gap: $spacing-24;
+
     .project-description-section {
       padding: $spacing-12 0;
+
+      .about-container {
+        grid-template-columns: 1fr;
+        row-gap: $spacing-12;
+      }
     }
 
     .project-tech-section {
@@ -173,34 +179,34 @@
   }
 
   @include respond-max($mobile-480) {
-    row-gap: $spacing-16;
+    row-gap: $spacing-20;
 
     .project-description-section {
-      padding: 0;
+      padding: $spacing-12 0;
 
       .about-container {
         grid-template-columns: 1fr;
-        row-gap: $spacing-16;
+        row-gap: $spacing-12;
 
         .about-text-container {
-          .button-section {
-            .btn {
-              padding: 8px $spacing-24;
-            }
-          }
+          padding: $spacing-20;
         }
       }
     }
 
     .project-tech-section {
-      padding-top: 0;
+      padding: 0 $spacing-16 $spacing-24;
 
       .tech-container {
         grid-template-columns: 1fr;
-        row-gap: $spacing-16;
+        row-gap: $spacing-12;
 
         .tech-image-container {
           order: -1;
+        }
+
+        .tech-text-container {
+          padding: $spacing-20;
         }
       }
     }
